@@ -8,6 +8,10 @@ android {
         minSdkVersion 18
         targetSdkVersion 28
     }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
 
     buildTypes {
         release {
@@ -28,5 +32,6 @@ dependencies {
     implementation "com.google.android.gms:play-services-maps:$googlePlayVersion"
     implementation "com.google.android.gms:play-services-location:$googlePlayVersion"
     implementation "org.permissionsdispatcher:permissionsdispatcher:$permissionDispatcherVersion"
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     annotationProcessor "org.permissionsdispatcher:permissionsdispatcher-processor:$permissionDispatcherVersion"
 }
